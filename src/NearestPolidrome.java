@@ -30,7 +30,7 @@ public class NearestPolidrome {
 
                 if (count == numbers.size()) {
 
-                    System.out.println(input);
+
 
                     flag = false;
 
@@ -62,7 +62,7 @@ public class NearestPolidrome {
 
             if (count == numbers.size()) {
 
-                System.out.println(input);
+
 
                 flag = false;
 
