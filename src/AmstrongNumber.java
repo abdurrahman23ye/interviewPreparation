@@ -14,15 +14,21 @@ public class AmstrongNumber {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int input=scan.nextInt();
-        sayininBasamaklarininKupununToplami(input)
+        sayininBasamaklarininKupununToplami(input);
     }
 
     private static void sayininBasamaklarininKupununToplami(int input) {
+        int numbers=0;
         int result=0;
         while (input>0){
 
-            result+=Math.power(input%10)*(input%10)*(input%10);
+            numbers=input%10;
+            result+=numbers*numbers*numbers;
+
+            input = input/10;
 
         }
+
+        System.out.println("result = " + result);
     }
 }
