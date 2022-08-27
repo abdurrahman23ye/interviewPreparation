@@ -14,10 +14,17 @@ public class AmstrongNumber {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int input=scan.nextInt();
-        sayininBasamaklarininKupununToplami(input);
+      int sayininBasamaklarininKupununToplami=  sayininBasamaklarininKupununToplami(input);
+
+      if(input==sayininBasamaklarininKupununToplami){
+
+          System.out.println("girilen sayi bir amstrong sayidir");
+      }else {
+          System.out.println("girilen sayi bir amstrong sayi degildir");
+      }
     }
 
-    private static void sayininBasamaklarininKupununToplami(int input) {
+    private static int sayininBasamaklarininKupununToplami(int input) {
         int numbers=0;
         int result=0;
         while (input>0){
@@ -29,6 +36,6 @@ public class AmstrongNumber {
 
         }
 
-        System.out.println("result = " + result);
+       return result;
     }
 }
